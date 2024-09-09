@@ -1,0 +1,250 @@
+use warehouse electric_vehicle_population_data;
+use database electric_vehicle_population_data;
+use schema PUBLIC;
+
+CREATE TABLE DimVehicle (
+    VehicleID INTEGER PRIMARY KEY,
+    VIN_1_10 VARCHAR,
+    ModelYear Date,
+    Make VARCHAR,
+    Model VARCHAR,
+    CAFEVELIGIBILITY VARCHAR,
+    EVType VARCHAR,
+    Electric_range INTEGER
+);
+
+------------------------------------------------------------------------------------------------------------------------------------------	
+
+
+use warehouse electric_vehicle_population_data;
+use database electric_vehicle_population_data;
+use schema PUBLIC;
+
+CREATE TABLE DimLocation (
+    LocationID INTEGER PRIMARY KEY,
+    County VARCHAR,
+    City VARCHAR,
+    State VARCHAR,
+    LegislativeDistrict INTEGER,
+    ElectricUtility VARCHAR
+);
+
+
+------------------------------------------------------------------------------------------------------------------------------------------	
+
+use warehouse electric_vehicle_population_data;
+use database electric_vehicle_population_data;
+use schema PUBLIC;
+
+
+CREATE TABLE FactVehicleInfo (
+    VehicleID INTEGER,
+    LocationID INTEGER,
+    AgeOfVehicle INTEGER,
+    RangeToMaxRangeRatio FLOAT,
+    PRIMARY KEY (VehicleID, LocationID),
+    FOREIGN KEY (VehicleID) REFERENCES DimVehicle(VehicleID),
+    FOREIGN KEY (LocationID) REFERENCES DimLocation(LocationID)
+);
+------------------------------------------------------------------------------------------------------------------------------------------	
+SELECT
+    EVType,
+    CAFEVELIGIBILITY,
+    COUNT(*) AS VehicleCount
+FROM
+    DimVehicle
+GROUP BY
+    CUBE(EVType, CAFEVELIGIBILITY);
+
+----------------------------------------------------------------------------------------------------------------------------------------
+SELECT
+    ModelYear,
+    Model,
+    COUNT(*) AS VehicleCount
+FROM
+    DimVehicle
+GROUP BY
+    ModelYear,
+    Model
+ORDER BY
+    ModelYear,
+    VehicleCount DESC;
+-----------------------------------------------------------------------------------------------------------------------------------------
+SELECT
+    County,
+    City,
+    COUNT(*) AS VehicleCount
+FROM
+    DimLocation
+GROUP BY
+    County,
+    City
+ORDER BY
+    VehicleCount DESC;
+
+-----
+SELECT
+    State,
+    County,
+    AVG(electricrange) AS AverageElectricRange,
+    MIN(electricrange) AS MinElectricRange,
+    MAX(electricrange) AS MaxElectricRange
+FROM
+    FactVehicleInfo AS FVI
+JOIN
+    DimLocation AS DL ON FVI.LocationID = DL.LocationID
+GROUP BY
+    State,
+    County
+ORDER BY
+    State, County;
+------------------------------------------------------------------------------------------------------------------------------------------	
+SELECT
+    AVG(electricrange) AS AverageElectricRange
+FROM
+    FactVehicleInfo;
+------------------------------------------------------------------------------------------------------------------------------------------	
+
+use warehouse electric_vehicle_population_data;
+use database electric_vehicle_population_data;
+use schema PUBLIC;
+SELECT
+    AVG(AgeOfVehicle) AS AverageAgeOfVehicle
+FROM
+    FactVehicleInfo;
+
+
+------------------------------------------------------------------------------------------------------------------------------------------	
+use warehouse electric_vehicle_population_data;
+use database electric_vehicle_population_data;
+use schema PUBLIC;
+SELECT
+    EVType,
+    AVG(AgeOfVehicle) AS AverageAgeOfVehicle,
+    MIN(AgeOfVehicle) AS MinAgeOfVehicle,
+    MAX(AgeOfVehicle) AS MaxAgeOfVehicle
+FROM
+    FactVehicleInfo AS FVI
+JOIN
+    DimVehicle AS DV ON FVI.VehicleID = DV.VehicleID
+
+GROUP BY
+    EVType;
+------------------------------------------------------------------------------------------------------------------------------------------	
+use warehouse electric_vehicle_population_data;
+use database electric_vehicle_population_data;
+use schema PUBLIC;
+SELECT
+    AVG(RangeToMaxRangeRatio) AS AverageRangeToMaxRangeRatio
+FROM
+    FactVehicleInfo;
+------------------------------------------------------------------------------------------------------------------------------------------	
+
+use warehouse electric_vehicle_population_data;
+use database electric_vehicle_population_data;
+use schema PUBLIC;
+SELECT
+    DV.Make,
+    MIN(FVI.electricrange) AS LowestElectricRange,
+    AVG(FVI.AgeOfVehicle) AS AverageAgeOfCars
+FROM
+    FactVehicleInfo AS FVI
+JOIN
+    DimVehicle AS DV ON FVI.VehicleID = DV.VehicleID
+GROUP BY
+    DV.Make order by LowestElectricRange asc limit 10;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
