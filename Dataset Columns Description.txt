@@ -1,0 +1,530 @@
+ [
+      "row-yuv8~28pj.4kru",
+      "00000000-0000-0000-1176-2D22BE13F166",
+      0,
+      1702593065,
+      null,
+      1702593166,
+      null,
+      "{ }",
+      "5YJYGDEF5L",
+      "Thurston",
+      "Lacey",
+      "WA",
+      "98516",
+      "2020",
+      "TESLA",
+      "MODEL Y",
+      "Battery Electric Vehicle (BEV)",
+      "Clean Alternative Fuel Vehicle Eligible",
+      "291",
+      "0",
+      "22",
+      "124535071",
+      "POINT (-122.7474291 47.0821119)",
+      "PUGET SOUND ENERGY INC",
+      "53067012221",
+      "2742",
+      "10",
+      "28"
+    ],
+---------------------------------------------
+
+
+0		{8}
+id	:	-1
+name	:	sid
+dataTypeName	:	meta_data
+fieldName	:	:sid
+position	:	0
+renderTypeName	:	meta_data
+	format		{0}
+(vide object)
+	flags		[1]
+0	:	hidden
+	1		{8}
+id	:	-1
+name	:	id
+dataTypeName	:	meta_data
+fieldName	:	:id
+position	:	0
+renderTypeName	:	meta_data
+	format		{0}
+(vide object)
+	flags		[1]
+0	:	hidden
+	2		{8}
+id	:	-1
+name	:	position
+dataTypeName	:	meta_data
+fieldName	:	:position
+position	:	0
+renderTypeName	:	meta_data
+	format		{0}
+(vide object)
+	flags		[1]
+0	:	hidden
+	3		{8}
+id	:	-1
+name	:	created_at
+dataTypeName	:	meta_data
+fieldName	:	:created_at
+position	:	0
+renderTypeName	:	meta_data
+	format		{0}
+(vide object)
+	flags		[1]
+0	:	hidden
+	4		{8}
+id	:	-1
+name	:	created_meta
+dataTypeName	:	meta_data
+fieldName	:	:created_meta
+position	:	0
+renderTypeName	:	meta_data
+	format		{0}
+(vide object)
+	flags		[1]
+0	:	hidden
+	5		{8}
+id	:	-1
+name	:	updated_at
+dataTypeName	:	meta_data
+fieldName	:	:updated_at
+position	:	0
+renderTypeName	:	meta_data
+	format		{0}
+(vide object)
+	flags		[1]
+0	:	hidden
+	6		{8}
+id	:	-1
+name	:	updated_meta
+dataTypeName	:	meta_data
+fieldName	:	:updated_meta
+position	:	0
+renderTypeName	:	meta_data
+	format		{0}
+(vide object)
+	flags		[1]
+0	:	hidden
+	7		{8}
+id	:	-1
+name	:	meta
+dataTypeName	:	meta_data
+fieldName	:	:meta
+position	:	0
+renderTypeName	:	meta_data
+	format		{0}
+(vide object)
+	flags		[1]
+0	:	hidden
+	8		{9}
+id	:	583288589
+name	:	VIN (1-10)
+dataTypeName	:	text
+description	:	The 1st 10 characters of each vehicle's Vehicle Identification Number (VIN).
+fieldName	:	vin_1_10
+position	:	1
+renderTypeName	:	text
+tableColumnId	:	79309982
+	format		{0}
+(vide object)
+	9		{9}
+id	:	583288590
+name	:	County
+dataTypeName	:	text
+description	:	This is the geographic region of a state that a vehicle's owner is listed to reside within. Vehicles registered in Washington state may be located in other states.
+fieldName	:	county
+position	:	2
+renderTypeName	:	text
+tableColumnId	:	79309981
+	format		{0}
+(vide object)
+	10		{9}
+id	:	583288591
+name	:	City
+dataTypeName	:	text
+description	:	The city in which the registered owner resides.
+fieldName	:	city
+position	:	3
+renderTypeName	:	text
+tableColumnId	:	79309980
+	format		{0}
+(vide object)
+	11		{9}
+id	:	583288592
+name	:	State
+dataTypeName	:	text
+description	:	This is the geographic region of the country associated with the record. These addresses may be located in other states.
+fieldName	:	state
+position	:	4
+renderTypeName	:	text
+tableColumnId	:	80218820
+	format		{0}
+(vide object)
+	12		{9}
+id	:	583288593
+name	:	Postal Code
+dataTypeName	:	text
+description	:	The 5 digit zip code in which the registered owner resides.
+fieldName	:	zip_code
+position	:	5
+renderTypeName	:	text
+tableColumnId	:	79309971
+	format		{0}
+(vide object)
+	13		{9}
+id	:	583288594
+name	:	Model Year
+dataTypeName	:	text
+description	:	The model year of the vehicle, determined by decoding the Vehicle Identification Number (VIN).
+fieldName	:	model_year
+position	:	6
+renderTypeName	:	text
+tableColumnId	:	79309970
+	format		{0}
+(vide object)
+	14		{9}
+id	:	583288595
+name	:	Make
+dataTypeName	:	text
+description	:	The manufacturer of the vehicle, determined by decoding the Vehicle Identification Number (VIN).
+fieldName	:	make
+position	:	7
+renderTypeName	:	text
+tableColumnId	:	79309979
+	format		{0}
+(vide object)
+	15		{9}
+id	:	583288596
+name	:	Model
+dataTypeName	:	text
+description	:	The model of the vehicle, determined by decoding the Vehicle Identification Number (VIN).
+fieldName	:	model
+position	:	8
+renderTypeName	:	text
+tableColumnId	:	79309978
+	format		{0}
+(vide object)
+	16		{9}
+id	:	583288597
+name	:	Electric Vehicle Type
+dataTypeName	:	text
+description	:	This distinguishes the vehicle as all electric or a plug-in hybrid.
+fieldName	:	ev_type
+position	:	9
+renderTypeName	:	text
+tableColumnId	:	79309976
+	format		{1}
+align	:	right
+	17		{9}
+id	:	583288598
+name	:	Clean Alternative Fuel Vehicle (CAFV) Eligibility
+dataTypeName	:	text
+description	:	This categorizes vehicle as Clean Alternative Fuel Vehicles (CAFVs) based on the fuel requirement and electric-only range requirement in House Bill 2042 as passed in the 2019 legislative session.
+fieldName	:	cafv_type
+position	:	10
+renderTypeName	:	text
+tableColumnId	:	79309975
+	format		{1}
+align	:	right
+	18		{9}
+id	:	583288599
+name	:	Electric Range
+dataTypeName	:	number
+description	:	Describes how far a vehicle can travel purely on its electric charge.
+fieldName	:	electric_range
+position	:	11
+renderTypeName	:	number
+tableColumnId	:	79309974
+	format		{1}
+align	:	right
+	19		{9}
+id	:	583288600
+name	:	Base MSRP
+dataTypeName	:	number
+description	:	This is the lowest Manufacturer's Suggested Retail Price (MSRP) for any trim level of the model in question.
+fieldName	:	base_msrp
+position	:	12
+renderTypeName	:	number
+tableColumnId	:	79310342
+	format		{1}
+align	:	right
+	20		{9}
+id	:	583288610
+name	:	Legislative District
+dataTypeName	:	text
+description	:	The specific section of Washington State that the vehicle's owner resides in, as represented in the state legislature.
+fieldName	:	legislative_district
+position	:	13
+renderTypeName	:	text
+tableColumnId	:	149361048
+	format		{1}
+align	:	center
+	21		{9}
+id	:	583288602
+name	:	DOL Vehicle ID
+dataTypeName	:	text
+description	:	Unique number assigned to each vehicle by Department of Licensing for identification purposes.
+fieldName	:	dol_vehicle_id
+position	:	14
+renderTypeName	:	text
+tableColumnId	:	82051518
+	format		{0}
+(vide object)
+	22		{9}
+id	:	583288603
+name	:	Vehicle Location
+dataTypeName	:	point
+description	:	The center of the ZIP Code for the registered vehicle.
+fieldName	:	geocoded_column
+position	:	15
+renderTypeName	:	point
+tableColumnId	:	87270515
+	format		{0}
+(vide object)
+	23		{9}
+id	:	583288605
+name	:	Electric Utility
+dataTypeName	:	text
+description	:	This is the electric power retail service territories serving the address of the registered vehicle. All ownership types for areas in Washington are included: federal, investor owned, municipal, political subdivision, and cooperative. If the address for the registered vehicle falls into an area with overlapping electric power retail service territories then a single pipe | delimits utilities of same TYPE and a double pipe || delimits utilities of different types. We combined vehicle address and Homeland Infrastructure Foundation Level Database (HIFLD) (https://gii.dhs.gov/HIFLD) Retail_Service_Territories feature layer using a geographic information system to assign values for this field. Blanks occur for vehicles with addresses outside of Washington or for addresses falling into areas in Washington not containing a mapped electric power retail service territory in the source data.
+fieldName	:	electric_utility
+position	:	17
+renderTypeName	:	text
+tableColumnId	:	141400529
+	format		{0}
+(vide object)
+	24		{9}
+id	:	583288606
+name	:	2020 Census Tract
+dataTypeName	:	text
+description	:	The census tract identifier is a combination of the state, county, and census tract codes as assigned by the United States Census Bureau in the 2020 census, also known as Geographic Identifier (GEOID).   More information can be found here:    https://www.census.gov/programs-surveys/geography/about/glossary.html#par_textimage_13   https://www.census.gov/programs-surveys/geography/guidance/geo-identifiers.html 
+fieldName	:	_2020_census_tract
+position	:	18
+renderTypeName	:	text
+tableColumnId	:	142655072
+	format		{0}
+(vide object)
+	25		{10}
+id	:	583288607
+name	:	Counties
+dataTypeName	:	number
+description	:	
+fieldName	:	:@computed_region_x4ys_rtnd
+position	:	19
+renderTypeName	:	number
+tableColumnId	:	87270516
+	computationStrategy		{3}
+	source_columns		[1]
+0	:	geocoded_column
+type	:	georegion_match_on_point
+	parameters		{2}
+region	:	_x4ys-rtnd
+primary_key	:	_feature_id
+	format		{0}
+(vide object)
+	26		{10}
+id	:	583288608
+name	:	Congressional Districts
+dataTypeName	:	number
+description	:	
+fieldName	:	:@computed_region_fny7_vc3j
+position	:	20
+renderTypeName	:	number
+tableColumnId	:	87270517
+	computationStrategy		{3}
+	source_columns		[1]
+0	:	geocoded_column
+type	:	georegion_match_on_point
+	parameters		{2}
+region	:	_fny7-vc3j
+primary_key	:	_feature_id
+	format		{0}
+(vide object)
+	27		{10}
+id	:	583288609
+name	:	WAOFM - GIS - Legislative District Boundary
+dataTypeName	:	number
+description	:	
+fieldName	:	:@computed_region_8ddd_yn5v
+position	:	21
+renderTypeName	:	number
+tableColumnId	:	87270518
+	computationStrategy		{3}
+	source_columns		[1]
+0	:	geocoded_column
+type	:	georegion_match_on_point
+	parameters		{2}
+region	:	_8ddd-yn5v
+primary_key	:	_feature_id
+	format		{0}
+(vide object)
+	grants		[1]
+	0		{3}
+inherited	:	false
+type	:	viewer
+	flags		[1]
+0	:	public
+	license		{2}
+name	:	Open Data Commons Open Database License
+termsLink	:	http://opendatacommons.org/licenses/odbl/1.0/
+	metadata		{3}
+	custom_fields		{3}
+	Temporal		{2}
+Posting Frequency	:	Monthly
+Period of Time	:	Data includes Battery Electric Vehicles and Plug-in Hybrid Electric Vehicles registered as of November 30, 2023.
+	Identification		{2}
+Originator	:	Research and Analysis Office, Department of Licensing
+Metadata Language	:	English
+	Notes		{4}
+1. 	:	A Battery Electric Vehicle (BEV) is an all-electric vehicle using one or more batteries to store the electrical energy that powers the motor and is charged by plugging the vehicle in to an electric power source. A Plug-in Hybrid Electric Vehicle (PHEV) is a vehicle that uses one or more batteries to power an electric motor; uses another fuel, such as gasoline or diesel, to power an internal combustion engine or other propulsion source; and is charged by plugging the vehicle in to an electric power source.
+2. 	:	Clean Alternative Fuel Vehicle (CAFV) Eligibility is based on the fuel requirement and electric-only range requirement as outlined in RCW 82.08.809 and RCW 82.12.809 to be eligible for Alternative Fuel Vehicles retail sales and Washington State use tax exemptions.  Sales or leases of these vehicles must occur on or after 8/1/2019 and meet the purchase price requirements to be eligible for Alternative Fuel Vehicles retail sales and Washington State use tax exemptions.
+3. 	:	Monthly count of vehicles for a county may change from this report and prior reports. Processes were implemented to more accurately assign county at the time of registration.
+4. 	:	Electric Range is no longer maintained for Battery Electric Vehicles (BEV) because new BEVs have an electric range of 30 miles or more. Zero (0) will be entered where the electric range has not been researched.
+rowLabel	:	Vehicle
+	availableDisplayTypes		[3]
+0	:	table
+1	:	fatrow
+2	:	page
+	owner		{8}
+id	:	eagg-6py7
+displayName	:	Department of Licensing
+profileImageUrlLarge	:	/api/users/eagg-6py7/profile_images/LARGE
+profileImageUrlMedium	:	/api/users/eagg-6py7/profile_images/THUMB
+profileImageUrlSmall	:	/api/users/eagg-6py7/profile_images/TINY
+screenName	:	Department of Licensing
+type	:	interactive
+	flags		[2]
+0	:	acceptedEula
+1	:	mayBeStoriesCoOwner
+	query		{0}
+(vide object)
+	rights		[1]
+0	:	read
+	tableAuthor		{8}
+id	:	eagg-6py7
+displayName	:	Department of Licensing
+profileImageUrlLarge	:	/api/users/eagg-6py7/profile_images/LARGE
+profileImageUrlMedium	:	/api/users/eagg-6py7/profile_images/THUMB
+profileImageUrlSmall	:	/api/users/eagg-6py7/profile_images/TINY
+screenName	:	Department of Licensing
+type	:	interactive
+	flags		[2]
+0	:	acceptedEula
+1	:	mayBeStoriesCoOwner
+	tags		[35]
+0	:	tesla
+1	:	leaf
+2	:	nissan
+3	:	model 3
+4	:	dol
+5	:	department of licensing
+6	:	green report
+7	:	ev
+8	:	evs
+9	:	phev
+10	:	phevs
+11	:	bev
+12	:	bevs
+13	:	electric
+14	:	hybrid
+15	:	vehicle
+16	:	plug-in
+17	:	volt
+18	:	bolt
+19	:	chevy
+20	:	chevrolet
+21	:	car
+22	:	environment
+23	:	clean energy
+24	:	population
+25	:	hybrids
+26	:	plug-ins
+27	:	vehicles
+28	:	cars
+29	:	energy
+30	:	nhtsa
+31	:	rao_open_data
+32	:	dol_open_data
+33	:	rao_ev
+34	:	rao_veh
+	flags		[4]
+0	:	default
+1	:	ownerMayBeContacted
+2	:	restorable
+3	:	restorePossibleForType
+	data		[5514]
+
+
+VIN (1-10),County,City,State,Postal Code,Model Year,Make,Model,Electric Vehicle Type,Clean Alternative Fuel Vehicle (CAFV) Eligibility,Electric Range,Base MSRP,Legislative District,DOL Vehicle ID,Vehicle Location,Electric Utility,2020 Census Tract
+-----------------------------------------------------------------
+
+VIN (1-10)
+
+Description: The 1st 10 characters of each vehicle's Vehicle Identification Number (VIN).
+Data Type: Text
+County
+
+Description: The geographic region of a state that a vehicle's owner is listed to reside within. Vehicles registered in Washington state may be located in other states.
+Data Type: Text
+City
+
+Description: The city in which the registered owner resides.
+Data Type: Text
+State
+
+Description: The geographic region of the country associated with the record. These addresses may be located in other states.
+Data Type: Text
+Postal Code
+
+Description: The 5 digit zip code in which the registered owner resides.
+Data Type: Text
+Model Year
+
+Description: The model year of the vehicle, determined by decoding the Vehicle Identification Number (VIN).
+Data Type: Text
+Make
+
+Description: The manufacturer of the vehicle, determined by decoding the Vehicle Identification Number (VIN).
+Data Type: Text
+Model
+
+Description: The model of the vehicle, determined by decoding the Vehicle Identification Number (VIN).
+Data Type: Text
+Electric Vehicle Type
+
+Description: This distinguishes the vehicle as all electric or a plug-in hybrid.
+Data Type: Text
+Clean Alternative Fuel Vehicle (CAFV) Eligibility
+
+Description: Categorizes the vehicle as Clean Alternative Fuel Vehicles (CAFVs) based on the fuel requirement and electric-only range requirement in House Bill 2042 as passed in the 2019 legislative session.
+Data Type: Text
+Electric Range
+
+Description: Describes how far a vehicle can travel purely on its electric charge.
+Data Type: Number
+Base MSRP
+
+Description: The lowest Manufacturer's Suggested Retail Price (MSRP) for any trim level of the model in question.
+Data Type: Number
+Legislative District
+
+Description: The specific section of Washington State that the vehicle's owner resides in, as represented in the state legislature.
+Data Type: Text
+DOL Vehicle ID
+
+Description: Unique number assigned to each vehicle by the Department of Licensing for identification purposes.
+Data Type: Text
+Vehicle Location
+
+Description: The center of the ZIP Code for the registered vehicle.
+Data Type: Point
+Electric Utility
+
+Description: Electric power retail service territories serving the address of the registered vehicle. All ownership types for areas in Washington are included.
+Data Type: Text
+2020 Census Tract
+
+Description: The census tract identifier assigned by the United States Census Bureau in the 2020 census, combining state, county, and census tract codes.
+Data Type: Text
