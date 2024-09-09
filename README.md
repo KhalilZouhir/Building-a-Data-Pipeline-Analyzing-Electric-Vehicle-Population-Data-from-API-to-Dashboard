@@ -8,6 +8,7 @@ This project involves creating a comprehensive data pipeline to process electric
 - Data Collection: Data files are collected using a physical machine.
 - ETL Process: The data is processed with Talend for Extract, Transform, Load (ETL).
 - Data Warehouse: The processed data is loaded into a Snowflake data warehouse.
+- Data Analysis: Analysis is performed on the data within the data warehouse.
 - Dashboard Visualization: A Power BI dashboard is created to visualize the data.
 
 ## Detailed Explanation
