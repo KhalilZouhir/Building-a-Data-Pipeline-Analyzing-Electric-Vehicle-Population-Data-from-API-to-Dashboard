@@ -12,7 +12,7 @@ This project involves creating a comprehensive data pipeline to process electric
 - Dashboard Visualization: A Power BI dashboard is created to visualize the data.
 
 ## Detailed Explanation
-For a detailed explanation of the entire project, including in-depth details and a demo video, please refer to my Medium article: [link].
+For a detailed explanation of the entire project, including in-depth details and a demo video, please refer to my Medium article: https://medium.com/@khalilz_12544/building-a-data-pipeline-analyzing-electric-vehicle-population-data-from-api-to-dashboard-5cf93d98c7b8
 
 ## Additional Information
-For more updates and insights, please check out my LinkedIn profile: [link].
+For more updates and insights, please check out my LinkedIn profile: https://www.linkedin.com/in/khalil-zouhir-92382b236
